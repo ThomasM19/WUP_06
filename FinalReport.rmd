@@ -25,6 +25,7 @@ If not, then whose view differs from whom??
 
 # Methods
 
+I first made sure that the character variables were turned into factor variables. I then looked into a fisher exact test and a Person exact test to find out what was going on in between the different races. 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
 # Results
@@ -152,9 +153,6 @@ fisherXY = function(x, y, confL = 0, printAll=FALSE){
 ```{r}
 fisherXY(GSS$RACE,GSS$BIGBANG)
 ```
-
-In the 2x2 test that was ran to see each of the RACES' beliefs on the BIGBANG theory you can see that there is a significant in between black and others 
-
 
 # Discussion and Conclusion
 In conclusion, In the 2x2 test that was ran to see each of the RACES' beliefs on the BIGBANG theory you can see that there is a significant in between black and others, there is also a difference in Blakc and White. 
